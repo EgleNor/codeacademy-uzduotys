@@ -1,0 +1,112 @@
+:root {
+/* colors */
+    --white: white;
+    --whiteblue: #e2e0ff;
+    --primary-200: #c1beff;
+    --primary-300: #a29dff;
+    --: #837dff;
+    --blue: #645cff;
+    --darkblue: #504acc;
+    --primary-700: #3c3799;
+    --primary-800: #282566;
+    --black: #121218;  
+}
+                    /* For mobile*/
+/* header */
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 20px;
+}
+.socialmedia {
+    width: 70px;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15vh 5vh;
+    background-color: var(--blue);
+    height: 30vh;
+}
+.button {
+    background-color: var(--blue);
+    color: var(white);
+    padding: 10px 24px;
+    border: none;
+}
+.button:hover {
+    background-color: var (--darkblue);
+}
+.white-text {
+    color: var(white);
+}
+.headline {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+}
+.headline span {
+    color: var(--blue);
+}
+/* About us */
+.images {
+    width: 100%;
+}
+.centered {
+    padding: 20px;
+}
+
+/* Services */
+.services {
+    background-color: var(--whiteblue);
+    text-align: center;
+    padding: 5vh  ;
+}
+.icons {
+    width: 60px;
+}
+
+/* Tours */
+.img-contianer {
+    position: relative;
+}
+.date {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: var(--blue);
+    text-transform: capitalize;
+    padding: 0.25rem 0.5rem;
+}
+.details {
+    display: flex;
+    justify-content: space-between;
+}
+#location {
+    width: 20px;
+}
+.country {
+    color: var(--blue);
+}
+.price {
+    display: flex;
+    flex-direction: column;
+    
+}
+/* Gallery */
+/* Submit */
+.sing-up {
+    display: flex;
+    background-color: var(--blue);
+    padding: 15vh 5vh;
+    height: 30vh;
+}
+/* Footer */
+footer {
+    background-color: var(--black);
+}
