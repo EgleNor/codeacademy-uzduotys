@@ -27,7 +27,7 @@
             <h1 class="white-text">CONTINUE EXPLORING</h1>
             <p class="white-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
             <p class="white-text">Lorem ipsum dolor sit amet consectetur.</p>
-            <button>Explore Tours</button>
+            <button class="explore" >Explore Tours</button>
         </div>
     </header>
 
@@ -38,7 +38,7 @@
             <h3>EXPLORE THE DIFFERENCE</h3>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit vel temporibus veniam illo dolorum consequatur iusto repudiandae inventore optio officiis!</p>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt nesciunt, voluptatem ex deleniti dolorem eaque! Molestias illum similique minus cupiditate.</p>
-            <a href="#">Read More</a>
+            <a class="anchor" href="#">Read More</a>
         </section>
 
         <section class="services">
@@ -64,33 +64,90 @@
 
         <section class="centered">
             <h2 class="headline">FEATURED <span>TOURS</span></h2>
-            <div class="tours">
-                <div>
-                    <div class="img-container">
-                        <div class="date">August 14th, 2022</div>
-                        <img class="images" src="icons/tibet.jpg" alt="mountain view">
-                    </div>
+            <div class="tour-container">
+                <div class="img-container">
+                    <div class="date">August 14th, 2022</div>
+                    <img class="images" src="icons/tibet.jpg" alt="mountain view">
                     <h4>Tibet Adventure</h4>
-                    <div class="details">
+                </div>
+                <div>
+                    <div class="tour-info">
                         <div class="country">
                             <p></p><img id="location" src="icons/map.png" alt="map icon">
                             China</p>
                         </div>
-                        <div class="price">
+                        <div class="tour-details">
                             <p>6 Days</p>
                             <p>From $2100</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-
+            <div class="tour-container">
+                <div class="img-container">
+                    <div class="date">October 1th, 2022</div>
+                    <img class="images" src="icons/indonesia.jpg" alt="mountain view">
+                    <h4>Best Of Java</h4>
+                </div>
+                <div>
+                    <div class="tour-info">
+                        <div class="country">
+                            <p></p><img id="location" src="icons/map.png" alt="map icon">
+                            China</p>
+                        </div>
+                        <div class="tour-details">
+                            <p>10 Days</p>
+                            <p>From $4100</p>
+                        </div>
+                    </div>
+                </div>
+            </div><div class="tour-container">
+                <div class="img-container">
+                    <div class="date">September 26th, 2022</div>
+                    <img class="images" src="icons/hongkong.jpg" alt="city view">
+                    <h4>Explore Hong Kong</h4>
+                </div>
+                <div>
+                    <div class="tour-info">
+                        <div class="country">
+                            <p></p><img id="location" src="icons/map.png" alt="map icon">
+                            Hong Kong</p>
+                        </div>
+                        <div class="tour-details">
+                            <p>12 Days</p>
+                            <p>From $3100</p>
+                        </div>
+                    </div>
+                </div>
+            </div><div class="tour-container">
+                <div class="img-container">
+                    <div class="date">December 5th, 2022</div>
+                    <img class="images" src="icons/Kenya.jpg" alt="mountain view">
+                    <h4>Kenya Highlights</h4>
+                </div>
+                <div>
+                    <div class="tour-info">
+                        <div class="country">
+                            <p></p><img id="location" src="icons/map.png" alt="map icon">
+                            Kenya</p>
+                        </div>
+                        <div class="tour-details">
+                            <p>22 Days</p>
+                            <p>From $5400</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p><a id="more-tours" href="#">All Tours</a></p>
+        </section> 
         <section>
             <h2 class="headline">OUR <span>GALLERY</span></h2>
-                <img class="images" src="icons/tibet.jpg" alt="mountain view">
-                <img class="images" src="icons/indonesia.jpg" alt="volcano view">
-                <img class="images" src="icons/hongkong.jpg" alt="city view">
-                <img class="images" src="icons/Kenya.jpg" alt="africa view">
+                <div>
+                    <img class="images" src="icons/tibet.jpg" alt="mountain view">
+                    <img class="images" src="icons/indonesia.jpg" alt="volcano view">
+                    <img class="images" src="icons/hongkong.jpg" alt="city view">
+                    <img class="images" src="icons/Kenya.jpg" alt="africa view">
+                </div>
         </section>
 
         <section>
@@ -99,22 +156,22 @@
                     <h1 class="white-text">WANT LATEST TOUR INFO AND UPDATES?</h1>
                     <p class="white-text">Sign Up For Newsletter And Stay Up To Date</p>
                 </div>
-                <form>
-                    <input type="email" placeholder="your email">
-                    <button type="submit">submit</button>
+                <form class="input-group">
+                    <input class="email" type="email" placeholder="Your email">
+                    <button type="submit">SUBMIT</button>
                 </form>
             </div>
         </section>
 
         <footer>
-            <nav>
+            <nav class="footer-items">
                 <a class="white-text" href="#">Home</a>
                 <a class="white-text" href="#">About</a>
                 <a class="white-text" href="#">Services</a>
                 <a class="white-text" href="#">Featured</a>
                 <a class="white-text" href="#">Gallery</a>
             </nav>
-            <div>
+            <div class="footer-items">
                 <ul class="socialmedia">
                     <li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-instagram" ></i></a></li>
                     <li><a href="https://www.twitter.com/" target="_blank"><i class="fa fa-twitter" ></i></a></li>
@@ -122,7 +179,7 @@
                 </ul>
             </div>
             <p class="white-text">
-                copyright &copy; Hiking tours 2022. All rights reserved.
+                Copyright &copy; Hiking tours 2022. All rights reserved.
             </p>
         </footer>
     </main>
