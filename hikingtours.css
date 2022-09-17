@@ -1,3 +1,6 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
 :root {
 /* colors */
     --white: white;
@@ -17,6 +20,9 @@ h4 {
     justify-content: space-between;
     align-items: baseline;
     padding: 20px;
+}
+.nav-center {
+    display: none;
 }
 .socialmedia {
     width: 70px;
@@ -57,6 +63,21 @@ h4 {
 .headline span {
     color: var(--blue);
 }
+@media screen and (min-width: 769px) {
+    .nav-center {
+        display: block;
+    }
+    .nav-center a {
+        text-decoration: none;
+        color: black;
+        padding-left: 1rem;
+    }
+    .container {
+        background: linear-gradient(rgba(74, 63, 218, 0.7), rgba(0, 0, 0, 0.7)), 
+        url(https://images.unsplash.com/photo-1504280317859-9c6cce36bca8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format) 
+        center/cover no-repeat;
+    }
+}
 /* About us */
 .images {
     width: 100%;
@@ -68,9 +89,21 @@ h4 {
     text-decoration: none;
     color: var(--darkblue);
 }
-
+@media screen and (min-width: 769px) {
+    .about {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        column-gap: 4vh;
+    }
+    .about-text {
+        padding-right: 2vh;
+        display: flex;
+        flex-direction: column;
+        align-content: baseline;
+    }
+}
 /* Services */
-.services {
+.services-block {
     background-color: var(--whiteblue);
     text-align: center;
     padding: 5vh;
@@ -78,12 +111,21 @@ h4 {
 .icons {
     width: 60px;
 }
-
+@media screen and (min-width: 769px) {
+    .services {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .services-text {
+        max-width: 300px;
+    }
+}
 /* Tours */
 .date {
     color: black;
     background-color: var(--blue);
-    width: 30%;
+    width: 10rem;
     padding: 0.5rem;
     margin-top: 10px;
     position: absolute;
@@ -92,6 +134,7 @@ h4 {
     box-shadow: 0 2px 2px 2px rgb(185, 181, 181);
     margin-bottom: 30px;
     padding: 0 4px 4px 4px;
+    max-width: 500px;
 }
 .tour-info {
     display: flex;
@@ -115,10 +158,40 @@ h4 {
 }
 #more-tours {
     text-align: center;
+}
+#more-tours a {
     text-decoration: none;
     color: var(--blue);
 }
+@media screen and (min-width: 769px) {
+.tour-offers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    }
+}
 /* Gallery */
+ .gallery {
+    width: 100%;
+ }
+@media screen and (min-width: 769px){
+    .gallery {
+        width: 50%;
+    }
+    .gallery-box {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+@media screen and (min-width: 992px){
+    .gallery {
+        width: 25%;
+    }
+    .gallery-box {
+        display: flex; 
+        flex-wrap: wrap;
+    }
+}
 /* Submit */
 .sing-up {
     display: flex;
