@@ -1,0 +1,221 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+:root {
+/* colors */
+    --white: white;
+    --whiteblue: #e2e0ff;
+    --blue: #645cff;
+    --darkblue: #362fb6;
+    --black: #121218;  
+}
+h4 {
+    margin-top: none;
+}
+/* For mobile*/
+
+/* header */
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 20px;
+}
+.nav-center {
+    display: none;
+}
+.socialmedia {
+    width: 70px;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    padding: 0%;
+    margin: auto;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15vh 5vh;
+    background-color: var(--blue);
+    height: 30vh;
+}
+.explore {
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 10px 24px;
+    border: transparent;
+    display: inline-block;
+    box-shadow: 0 1px 1px 1px rgb(37, 37, 37);
+}
+.explore:hover {
+    background-color: var (--darkblue);
+}
+.white-text {
+    color: var(--white);
+    text-decoration: none;
+}
+.headline {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+}
+.headline span {
+    color: var(--blue);
+}
+@media screen and (min-width: 769px) {
+    .nav-center {
+        display: block;
+    }
+    .nav-center a {
+        text-decoration: none;
+        color: black;
+        padding-left: 1rem;
+    }
+    .container {
+        background: linear-gradient(rgba(74, 63, 218, 0.7), rgba(0, 0, 0, 0.7)), 
+        url(https://images.unsplash.com/photo-1504280317859-9c6cce36bca8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format) 
+        center/cover no-repeat;
+    }
+}
+/* About us */
+.images {
+    width: 100%;
+}
+.centered {
+    padding: 20px;
+}
+.anchor {
+    text-decoration: none;
+    color: var(--darkblue);
+}
+@media screen and (min-width: 769px) {
+    .about {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        column-gap: 4vh;
+    }
+    .about-text {
+        padding-right: 2vh;
+        display: flex;
+        flex-direction: column;
+        align-content: baseline;
+    }
+}
+/* Services */
+.services-block {
+    background-color: var(--whiteblue);
+    text-align: center;
+    padding: 5vh;
+}
+.icons {
+    width: 60px;
+}
+@media screen and (min-width: 769px) {
+    .services {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .services-text {
+        max-width: 300px;
+    }
+}
+/* Tours */
+.date {
+    color: black;
+    background-color: var(--blue);
+    width: 10rem;
+    padding: 0.5rem;
+    margin-top: 10px;
+    position: absolute;
+}
+.tour-container {
+    box-shadow: 0 2px 2px 2px rgb(185, 181, 181);
+    margin-bottom: 30px;
+    padding: 0 4px 4px 4px;
+    max-width: 500px;
+}
+.tour-info {
+    display: flex;
+    justify-content: space-between;
+}
+.tour-details {
+    display: block;
+    text-align: justify;
+    line-height: 0%;
+}
+#location {
+    width: 20px;
+}
+.country {
+    color: var(--blue);
+}
+.price {
+    display: flex;
+    flex-direction: column;
+    
+}
+#more-tours {
+    text-align: center;
+}
+#more-tours a {
+    text-decoration: none;
+    color: var(--blue);
+}
+@media screen and (min-width: 769px) {
+.tour-offers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    }
+}
+/* Gallery */
+ .gallery {
+    width: 100%;
+ }
+@media screen and (min-width: 769px){
+    .gallery {
+        width: 50%;
+    }
+    .gallery-box {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+@media screen and (min-width: 992px){
+    .gallery {
+        width: 25%;
+    }
+    .gallery-box {
+        display: flex; 
+        flex-wrap: wrap;
+    }
+}
+/* Submit */
+.sing-up {
+    display: flex;
+    align-items: center;
+    background-color: var(--blue);
+    padding: 15vh 5vh;
+    height: 30vh;
+}
+.input-group {
+    margin: 0 auto;
+    display: flex;
+    height: 40px;
+    align-items: baseline;
+}
+button:hover {
+    background-color: var(--darkblue);
+    border: transparent;
+}
+/* Footer */
+footer {
+    background-color: var(--black);
+    text-align: center;
+    padding: 2rem 2rem;
+}
+.footer-items {
+    margin: 25px;
+}
